@@ -1,0 +1,542 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@800&family=Poppins:wght@400;500;600;700;800&display=swap");
+:root {
+  --primary-color: #1dca7c;
+  --secondary-color: #ffffff;
+  --muted-color: #7bdcb557;
+  --dark-color: #000;
+  --footer-bg-color: #333239;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Barlow", sans-serif;
+}
+.section {
+  padding: 6rem 0;
+}
+.background {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+/* Hero Section */
+/* ================== */
+.hero {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.9) 100%
+    ),
+    url("image/rev_home42.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.hero-content {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.hero-content p {
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+.hero-content h1 {
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  font-weight: 900;
+  font-size: 7rem;
+  line-height: 1;
+}
+.hero-content span {
+  color: var(--secondary-color);
+  text-transform: capitalize;
+  font-size: 1.3rem;
+}
+.hero-content button {
+  padding: 0.9rem 2rem;
+  cursor: pointer;
+  margin-top: 2rem;
+  margin-right: 1rem;
+  color: var(--secondary-color);
+  transition: 0.5s;
+  font-size: 0.9rem;
+}
+.hero-content button:nth-child(1) {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+.hero-content button:nth-child(2) {
+  background-color: transparent;
+  border: 1px solid var(--secondary-color);
+}
+.hero-content button:hover {
+  background-color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  color: #313030;
+}
+/* Meet Smartic charger */
+/* =========================== */
+.header-content {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+.header-content h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+.header-content p {
+  padding: 1.7rem 0 2rem 0;
+}
+.two-part {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+.bg-image {
+  background-image: url("image/h45_decor1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  width: 100%;
+  padding: 4.2rem 0;
+  margin-top: 5rem;
+}
+.bg-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.charger-property {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  gap: 2rem;
+  width: 100%;
+}
+.charger-property div {
+  background-color: var(--muted-color);
+  padding: 1.7rem 0;
+  border-radius: 10px;
+}
+.charger-property div > span {
+  font-size: 8rem;
+}
+.charger-property div > h3 {
+  font-size: 2.5rem;
+}
+.charger-review {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+}
+.charger-review div:nth-child(1) {
+  width: 60%;
+  border-right: 2px solid #fff;
+}
+.charger-review div > h3 {
+  font-size: 2.5rem;
+}
+
+.star {
+  display: flex;
+  font-size: 1rem;
+  color: #f9fc45;
+  padding: 5px;
+}
+.review-content {
+  padding-left: 1.5rem;
+}
+
+/* charger Card
+========================= */
+.charger-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-content: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.image img {
+  width: 100%;
+  border-radius: 10px;
+}
+.card h2 {
+  text-transform: uppercase;
+  padding: 1rem 0;
+}
+.card p {
+  font-weight: 300;
+  font-size: 15px;
+  color: #464545;
+}
+/* Multiple Device Charging 
+=============================*/
+.multi-charger-bg {
+  background-color: var(--primary-color);
+}
+.multi-charger {
+  width: 1536px;
+  max-width: 100%;
+  display: flex;
+  margin: auto;
+}
+.left_part {
+  width: 50%;
+  text-align: left;
+  padding: 8rem 2.5rem;
+}
+
+.multi-charger-content h2 {
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  font-weight: 900;
+  font-size: 2.5rem;
+  text-align: left;
+}
+.multi-charger-content p {
+  font-weight: 300;
+  font-size: 15px;
+  color: var(--secondary-color);
+  width: 70%;
+  padding: 1.5rem 0;
+  text-align: left;
+}
+.right-part {
+  width: 50%;
+  background-image: url("image/h42_pic1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.charging-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+}
+.charging-buttons button {
+  padding: 0.8rem 2rem;
+  cursor: pointer;
+  margin-right: 1rem;
+  color: var(--dark-color);
+  transition: 0.5s;
+  font-size: 0.9rem;
+  font-weight: bold;
+  background-color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.charging-buttons button:hover {
+  background-color: var(--dark-color);
+  border: 1px solid var(--dark-color);
+  color: var(--secondary-color);
+}
+/* Status
+=========================== */
+.status-bg {
+  background-image: url("image/h42_decor.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  padding: 2rem 0;
+}
+.status-property {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  gap: 1rem;
+  width: 100%;
+}
+.status-property div > span {
+  font-size: 5rem;
+}
+.status-property div > h3 {
+  font-size: 5rem;
+  color: var(--primary-color);
+  margin-top: -15px;
+}
+.status-property div > p {
+  color: var(--dark-color);
+  font-size: 1.2rem;
+}
+
+/* Subscription 
+=================*/
+.subscription-bg {
+  background-color: var(--primary-color);
+}
+.subscription {
+  width: 1536px;
+  max-width: 100%;
+  display: flex;
+  margin: auto;
+}
+.left_part {
+  width: 50%;
+  text-align: center;
+  padding: 10rem 2.5rem;
+}
+.subscription-content h2 {
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  font-weight: 900;
+  font-size: 3.2rem;
+}
+.subscription-content p {
+  font-weight: 300;
+  font-size: 1rem;
+  color: var(--secondary-color);
+  width: 100%;
+  margin: auto;
+  padding-bottom: 0.3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.right-part {
+  width: 50%;
+  background-image: url("image/h42_pic2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+.subscription-button input[type="email"] {
+  background-color: transparent;
+  border: 1px solid var(--secondary-color);
+  padding: 0.9rem 1.5rem;
+  width: 50%;
+  border-radius: 5px;
+  outline: none;
+  margin-top: 1.5rem;
+}
+.subscription-button input[type="email"]::placeholder {
+  color: #ecebeb;
+}
+.subscription-button button {
+  padding: 0.9rem 2rem;
+  border: 1px solid var(--secondary-color);
+  margin-left: -1rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.subscription-button button:hover {
+  background-color: var(--dark-color);
+  color: var(--secondary-color);
+  border-left: none;
+}
+
+/* Footer styles 
+====================*/
+.footer{
+  background-color: var(--footer-bg-color);
+  color: var(--secondary-color);
+}
+.footer h2{
+  text-align: center;
+  padding: 3rem 0;
+  font-size: 2rem;
+  font-family: serif;
+  font-family: "Barlow", sans-serif;
+}
+.footer-content{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap ;
+  border-top: 1px solid #636363;
+  border-bottom: 1px solid #636363;
+  padding: 2rem 0;
+  line-height: 2;
+  justify-content: space-between;
+}
+.copyright{
+  text-align: center;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 1rem 0;
+  color: #636363;
+}
+.copyright span{
+  color: var(--secondary-color);
+}
+.footer-header{
+  color: var(--primary-color);
+  font-size: 1.2rem;
+}
+.info p{
+  font-size: 14px;
+  font-weight: normal;
+  color: #828282;
+}
+.pages p:hover{
+  color: var(--primary-color);
+  transition: .5s;
+}
+.social-button{
+  display: flex;
+  flex-wrap: wrap ;
+  gap: .6rem;
+}
+ .fa-brands{
+  border: 1px solid #828282;
+  border-radius: 100%;
+  width: 43px;
+  height: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-button i:hover{
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  transition: .5s;
+}
+/* responsive for all device
+=========================== */
+/* for 2xl device */
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+/* for xl device */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+  .bg-image {
+    background-size: contain;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+  .charger-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* for lg device */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+  .two-part {
+    display: block;
+  }
+  .status-property {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .header-content {
+    text-align: center;
+    width: 80%;
+  }
+}
+/* for md device */
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+  .left-part {
+    width: 100%;
+    text-align: center;
+  }
+  .right-part {
+    display: none;
+  }
+  .multi-charger-content p {
+    width: 100%;
+    text-align: center;
+  }
+  .multi-charger-content h2 {
+    text-align: center;
+  }
+  .charging-buttons {
+    justify-content: center;
+  }
+  .header-content {
+    width: 100%;
+  }
+  .left_part {
+    width: 100%;
+    padding: 10rem 1rem;
+  }
+}
+/* for sm device */
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+}
+/* for xs device */
+@media (max-width: 475px) {
+  .container {
+    max-width: 100%;
+  }
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+  .hero-content button {
+    margin-right: 0;
+    margin-top: 6px;
+  }
+  .charger-property {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .charger-review div:nth-child(1) {
+    width: 100%;
+    border-right: 0;
+    text-align: center;
+  }
+  .charger-review {
+    display: block;
+    margin: auto;
+  }
+  .star {
+    justify-content: center;
+  }
+  .charger-card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .status-property {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+  }
+  .subscription-button input[type="email"] {
+    width: 100%;
+  }
+}
